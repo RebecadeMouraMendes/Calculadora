@@ -31,9 +31,11 @@
         </form>
 
         <?php
-        $priNum = isset($_POST['priNum']);
-        $segNum = isset($_POST['segNum']);
-
+        if(isset($_POST['priNum']) && isset($_POST['segNum'])){
+        $priNum = $_POST['priNum'];
+        $segNum = $_POST['segNum'];
+        }
+        
         if (isset($_POST['soma'])){
             ?> <br> <?php
             echo "<h3>A soma de ".$priNum ." + " .$segNum. " é igual a ". $priNum + $segNum; 
