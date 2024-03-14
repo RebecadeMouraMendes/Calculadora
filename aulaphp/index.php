@@ -31,8 +31,8 @@
         </form>
 
         <?php
-         $priNum = $_POST['priNum'];
-        $segNum = $_POST['segNum'];
+        $priNum = isset($_POST['priNum']);
+        $segNum = isset($_POST['segNum']);
 
         if (isset($_POST['soma'])){
             ?> <br> <?php
